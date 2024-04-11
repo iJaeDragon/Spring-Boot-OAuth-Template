@@ -24,12 +24,6 @@ public class UserApiController {
 
     private final UserService userService;
 
-    @PostMapping("/user")
-    public String signup(AddUserRequest request) {
-        userService.save(request);
-        return "redirect:/login";
-    }
-
     @PostMapping("/api/logout")
     public void logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
