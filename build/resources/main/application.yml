@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:mysql://192.168.114.128:3306/jd
+    username: jd2
+    password: 1Q2W3e4r!!
+    driver-class-name: com.mysql.jdbc.Driver
+  h2:
+    console:
+      enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 21475556791-2cgd5ot9k19ko12ucvosjsabhj0peova.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+jwt:
+  issuer: HeoZuo
+  secret_key: HeoZuo-NewMit
