@@ -25,4 +25,3 @@ alter table refresh_token modify column id int NOT NULL AUTO_INCREMENT;
 ALTER TABLE refresh_token CONVERT TO CHARSET utf8;
 select * from refresh_token;
 ```
->>>>>>> 66e554abb40de954dff71021c691970337feed8a
